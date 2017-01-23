@@ -1,3 +1,6 @@
 require("./public/style.css")
+let report = require("./js/main.js")
 document.write('It works')
 document.write(require("./content.js"))
+docment.write(report.getCoastalWatchReport())
+// console.log(report.getCoastalWatchReport())

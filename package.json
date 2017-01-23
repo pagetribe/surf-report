@@ -6,7 +6,11 @@
   "author": "Mark <pagetribemail@gmail.com>",
   "license": "MIT",
   "dependencies": {
+    "css-loader": "^0.26.1",
     "express": "^4.14.0",
-    "scrape-it": "^3.2.2"
+    "scrape-it": "^3.2.2",
+    "style-loader": "^0.13.1",
+    "webpack": "^1.14.0",
+    "webpack-dev-server": "^1.16.2"
   }
 }

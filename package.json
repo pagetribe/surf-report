@@ -1,0 +1,11 @@
+{
+  "name": "surf-report",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/pagetribe/surf-report.git",
+  "author": "Mark <pagetribemail@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "scrape-it": "^3.2.2"
+  }
+}

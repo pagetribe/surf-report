@@ -1,21 +1,13 @@
-const scrapeIt = require("scrape-it");
+var express = require('express')
+var app = express()
+var path = require('path')
 
-scrapeIt("http://www.coastalwatch.com/surf-cams-surf-reports/nsw/maroubra", 
-        {
-                  site: "title",
-                          date: ".surfReport ul h3",
-                                  report: ".surfReport p.noMarginBottom"
-                                        }
-    ).then(page => {
-      console.log(page);
-});
+app.use(express.static(path.join(__dirname, 'public')))
 
-scrapeIt("http://www.swellnet.com/reports/australia/new-south-wales/eastern-beaches", 
-        {
-                  site: "title",
-                          date: ".views-field-field-surf-report-date .field-content",
-                                  report: ".views-field-body"
-                                        }
-    ).then(page => {
-      console.log(page);
-});
+app.get('/', function(req, res) {
+  res.sendFile(path.join(__dirname + '/index.html'))
+})
+
+app.listen(3000, function() {
+  console.log('surf report listening on port 300')
+})

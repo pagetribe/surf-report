@@ -1,7 +1,19 @@
 Surf Report {{ title }}
-<div class='swellnet'>
-  <div class='report'></div>
-</div>
+
 <div class='coastalwatch'>
-  <div class='report'></div>
+  <div class='report'>
+  	{{ coastalwatch.site }}
+  	{{ coastalwatch.date }}
+  	{{ coastalwatch.report }}
+  </div>
+</div>
+
+<br><br><br>
+
+<div class='swellnet'>
+  <div class='report'>
+  	{{ swellnet.site }}
+  	{{ swellnet.date }}
+  	{{ swellnet.report }}
+  </div>
 </div>

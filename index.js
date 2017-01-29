@@ -5,7 +5,7 @@ var exphbs = require('express-handlebars')
 
 var scrape = require("./js/main.js")
 
-app.use(express.static(path.join(__dirname, 'public')))
+app.use("/public", express.static(path.join(__dirname, 'public')));
 app.engine('.hbs', exphbs({defaultLayout: 'layout', extname: '.hbs'}))
 app.set('view engine', '.hbs')
 

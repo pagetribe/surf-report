@@ -2,6 +2,9 @@
   "name": "surf-report",
   "version": "1.0.0",
   "main": "index.js",
+  "scripts": {
+    "start": "node --use_scrict index.js"
+  },
   "repository": "https://github.com/pagetribe/surf-report.git",
   "author": "Mark <pagetribemail@gmail.com>",
   "license": "MIT",
